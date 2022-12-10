@@ -1,17 +1,18 @@
 
 function isPalindrome(word) {
+  function reverseString(word) {
+  const wordArray = word.split("");
+  const reversedWordArray = wordArray.reverse();
+  const reversedWord = reversedWordArray.join("");
+  return reversedWord;
+}
+
   const reversedWord = reverseString(word);
   if (word === reversedWord) {
     return true;
   } else {
     return false;
   }
-}
-function reverseString(word) {
-  const wordArray = word.split("");
-  const reversedWordArray = wordArray.reverse();
-  const reversedWord = reversedWordArray.join("");
-  return reversedWord;
 }
 
 
